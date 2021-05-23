@@ -1,6 +1,6 @@
 class Api::TasksController < ApplicationController
   def index
-    @task = Task.order('updated_at DESC')
+    @tasks = Task.order('updated_at DESC')
   end
 
   def create
